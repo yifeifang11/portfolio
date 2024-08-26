@@ -21,7 +21,7 @@ export default function IntroStudy({
   tagColor,
 }: Props) {
   return (
-    <div>
+    <div id="intro">
       <div className="p-6">
         <div className="grid grid-cols-3">
           <div className="col-span-2">
@@ -37,6 +37,8 @@ export default function IntroStudy({
                     className={`text-amber-500 uppercase font-poppins font-light border border-amber-500 rounded-full px-2 py-1 ${
                       tagColor === "amber"
                         ? "border-amber-500 text-amber-500"
+                        : tagColor === "yellow"
+                        ? "border-yellow-500 text-yellow-500"
                         : ""
                     } `}
                   >
@@ -54,17 +56,13 @@ export default function IntroStudy({
             <Image
               src={image1}
               alt=""
-              className="hover:scale-105 transition-all duration-300"
+              className="transition-all duration-300"
             />
           </div>
         </div>
 
         <div className="overflow-hidden">
-          <Image
-            src={image2}
-            alt=""
-            className="hover:scale-105 transition-all duration-300"
-          />
+          <Image src={image2} alt="" className="transition-all duration-300" />
         </div>
 
         <div className="relative">
@@ -72,7 +70,7 @@ export default function IntroStudy({
             <Image
               src={image3}
               alt=""
-              className="hover:scale-105 transition-all duration-300"
+              className="transition-all duration-300"
             />
           </div>
         </div>

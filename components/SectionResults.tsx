@@ -12,8 +12,8 @@ export default function SectionResults({ images }: Props) {
   });
 
   return (
-    <div className="mt-60 px-6 mb-20">
-      <p className="font-poppins uppercase text-5xl font-medium text-center mb-6">
+    <div className="mt-60 px-6 mb-20" id="results">
+      <p className="font-poppins uppercase text-6xl font-medium text-center mb-6">
         Results
       </p>
       <div className="flex gap-6">
@@ -31,6 +31,9 @@ export default function SectionResults({ images }: Props) {
           </div>
         ))}
       </div>
+      <p className="font-light uppercase text-2xl text-center mt-8 hover:text-gray-500 transition duration-300">
+        <a href="#intro">Back to Top</a>
+      </p>
     </div>
   );
 }

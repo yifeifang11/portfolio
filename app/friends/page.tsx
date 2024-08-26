@@ -59,6 +59,7 @@ export default function Home() {
         ]}
         text2="The app was built with React Native and a javascript backend with Node.js. It is compatible on both iOS and Android."
         images={[BulletImage1, BulletImage2, BulletImage3, BulletImage4]}
+        id="features"
       />
       <SectionStudy2
         title="Reflection"
@@ -67,6 +68,7 @@ export default function Home() {
           "However, my biggest takeaway from working with Friends Life has been understanding what I am most passionate about: designing user experiences. Understanding how developing software can improve the lives of helpers at Friends Life has encouraged me to learn more about what makes a product successful and impactful while also leading me to think about how our current design could be improved upon. Working on this project has also given me the technical expertise to pursue more advanced projects framed in a human-centered lens.",
         ]}
         image={ImageSection2}
+        id="reflection"
       />
       <SectionResults images={[Final1, Final2, Final3, Final4, Final5]} />
     </div>

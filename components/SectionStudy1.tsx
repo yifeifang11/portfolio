@@ -11,6 +11,7 @@ interface Props {
   bullets: string[];
   text2: string;
   images: StaticImageData[];
+  id: string;
 }
 
 export default function SectionStudy1({
@@ -20,10 +21,11 @@ export default function SectionStudy1({
   bullets,
   text2,
   images,
+  id,
 }: Props) {
   const [hoveredSection, setHoveredSection] = useState<number>(0);
   return (
-    <div>
+    <div id={id}>
       <div className="mt-60 px-6 grid grid-cols-3 gap-6">
         <div className="overflow-hidden mt-6">
           <Image
@@ -33,7 +35,7 @@ export default function SectionStudy1({
           />
         </div>
         <div className="col-span-2 mr-20">
-          <p className="font-poppins uppercase text-4xl font-medium text-right">
+          <p className="font-poppins uppercase text-5xl font-medium text-right">
             {title}
           </p>
           <div className="font-redhat text-xl font-light flex flex-col gap-4 mt-4">
@@ -54,10 +56,7 @@ export default function SectionStudy1({
                 );
               })}
             </ul>
-            <p>
-              The app was built with React Native and a javascript backend with
-              Node.js. It is compatible on both iOS and Android.
-            </p>
+            <p>{text2}</p>
           </div>
         </div>
       </div>
