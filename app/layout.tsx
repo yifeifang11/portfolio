@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins, Red_Hat_Display } from "next/font/google";
+import { Poppins, Red_Hat_Display, Bangers } from "next/font/google";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -10,6 +10,11 @@ const poppins = Poppins({
 const redhat = Red_Hat_Display({
   subsets: ["latin"],
   variable: "--font-redhat",
+});
+const bangers = Bangers({
+  subsets: ["latin"],
+  variable: "--font-bangers",
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -24,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${redhat.variable} ${poppins.variable}`}>
+      <body
+        className={`${redhat.variable} ${poppins.variable} ${bangers.variable}`}
+      >
         {children}
       </body>
     </html>

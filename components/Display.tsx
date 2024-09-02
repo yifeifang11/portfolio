@@ -22,8 +22,8 @@ export default function Display({
       <div
         className={`bg-[#F3F4F6DC] grayscale hover:grayscale-0 ${
           backgroundColor === "yellow" ? "hover:bg-yellow-500" : ""
-        } ${
-          backgroundColor === "amber" ? "hover:bg-amber-500" : ""
+        } ${backgroundColor === "amber" ? "hover:bg-amber-500" : ""} ${
+          backgroundColor === "green" ? "hover:bg-lime-500" : ""
         } transition-all duration-300 cursor-pointer overflow-hidden relative group`}
       >
         <Image

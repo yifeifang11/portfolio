@@ -2,6 +2,7 @@ import Display from "@/components/Display";
 import Navbar from "@/components/Navbar";
 import UrbanThumbnail from "@/public/urban-thumbnail.png";
 import FriendsThumbnail from "@/public/friends-thumbnail.png";
+import NovaThumbail from "@/public/novathumbnail.png";
 import Temp from "@/public/temp.png";
 import Temp2 from "@/public/temp2.png";
 import Intro from "@/components/Intro";
@@ -31,8 +32,8 @@ export default function Home() {
             />
           </div>
           <Display
-            thumbnail={Temp}
-            backgroundColor="bg-yellow-500"
+            thumbnail={NovaThumbail}
+            backgroundColor="green"
             name="Neuro Omics Visual Analytics"
             tags={["UX Research", "UI Design", "Full-Stack"]}
             link="/nova"

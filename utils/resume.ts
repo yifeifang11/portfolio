@@ -2,36 +2,25 @@ export const resumeSections = [
   {
     title: "UI/UX & Software Engineering Intern",
     company: "UrbanGate Capital",
-    bullets: [
-      "Facilitate over $500,000 in cryptocurrency-funded loans by developing a full-stack website with Next.js and Tailwind CSS.",
-      "Streamline loan-funding process, resulting in multiple $100,000+ loans, by designing a Web3-friendly UI with Figma.",
-    ],
+    bullets:
+      "I designed and built the infrastructre to support crypotcurrency-funded loans for the private loan company UrbanGate Capital. I sought to understand the pain points of UrbanGate and curtrent investors, redesign UrbanGate's digital presence, and build a robust website to fund loans more efficiently.",
   },
   {
     title: "Data Visualization & UX Intern",
     company: "Rubinov Lab at Vanderbilt",
-    bullets: [
-      "Increase accessibility of neurogenomic tools to researchers by designing and improving analysis tools with data visualization.",
-      "Enhance usability of tools by researching academic papers to identify key data points and patterns sought by researchers.",
-      "Aid researchers in data discovery by programming interactive graphs and smooth animations with Next.js and D3.js.",
-    ],
+    bullets:
+      "I designed and developed a data visualization tool for neuroimaging and genetics reserachers. The tool allows researchers to upload their own data to visualize and obtain insights from their data.",
   },
   {
     title: "Product Management Intern",
     company: "The Wond'ry",
-    bullets: [
-      "Informed strategic recommendations for an idea management tool called the Wond’ry Idea Platform (WIP) by gathering critical insights through conducting 15+ customer interviews with administrative staff members and stakeholders of WIP.",
-      "Reduced costs by analyzing interview data and presenting findings about problem-solution fit in a written and visual report.",
-      "Identified key customer segments, personas, and use cases of WIP by executing collaborative ideation methods.",
-    ],
+    bullets:
+      "I conducted interviews with campus administrative departments to better understand the problem-solution fit of an idea management platform that the Wond'ry is deciding whether or not to continue implementing.",
   },
   {
     title: "Full-Stack Software Developer",
     company: "Friends Life Community",
-    bullets: [
-      "Reduced significant costs by developing a tailored attendance management application with React Native and Node.js.",
-      "Improved communication for parents of 75+ individuals with disabilities by integrating chat and notification features.",
-      "Streamlined attendance tracking for 150+ caregivers by working with a designer and coding intuitive frontend components.",
-    ],
+    bullets:
+      "I worked with a team to develop an attendance tracking mobile application for the nonprofit Friends Life Community.",
   },
 ];

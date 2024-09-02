@@ -24,7 +24,7 @@ export default function IntroStudy({
     <div id="intro">
       <div className="p-6">
         <div className="grid grid-cols-3">
-          <div className="col-span-2">
+          <div className="col-span-3">
             <p className="font-poppins uppercase text-6xl font-medium">
               {title}
             </p>
@@ -39,6 +39,8 @@ export default function IntroStudy({
                         ? "border-amber-500 text-amber-500"
                         : tagColor === "yellow"
                         ? "border-yellow-500 text-yellow-500"
+                        : tagColor === "green"
+                        ? "border-lime-500 text-lime-500"
                         : ""
                     } `}
                   >

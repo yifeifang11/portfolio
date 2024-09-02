@@ -8,20 +8,16 @@ export default function Navbar() {
         <a
           className="hover:text-gray-500 transition duration-300"
           href="https://linkedin.com/in/yifeifang11"
+          target="_blank"
         >
           <FaLinkedin />
         </a>
         <a
           className="hover:text-gray-500 transition duration-300"
           href="https://github.com/yifeifang11"
+          target="_blank"
         >
           <FaGithub />
-        </a>
-        <a
-          className="hover:text-gray-500 transition duration-300"
-          href="https://instagram.com/yifeifang/"
-        >
-          <FaInstagram />
         </a>
       </div>
       <div className="absolute left-1/2 transform -translate-x-1/2">

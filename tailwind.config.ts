@@ -11,6 +11,7 @@ const config: Config = {
       fontFamily: {
         poppins: ["var(--font-poppins)"],
         redhat: ["var(--font-redhat)"],
+        bangers: ["var(--font-bangers)"],
       },
     },
   },

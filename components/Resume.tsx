@@ -50,18 +50,12 @@ export default function Resume() {
                   hoveredSection === index ? "opacity-100" : "opacity-50"
                 }`}
               >
-                <p className="font-poppins uppercase text-3xl font-light mb-4 mt-6">
+                <p className="font-poppins uppercase text-3xl font-light mb-2 mt-6">
                   {section.title} - {section.company}
                 </p>
-                <ul className="font-redhat font-light list-disc text-xl">
-                  {section.bullets.map((bullet, index) => {
-                    return (
-                      <li key={index} className="ml-6">
-                        {bullet}
-                      </li>
-                    );
-                  })}
-                </ul>
+                <p className="font-redhat font-light text-xl">
+                  {section.bullets}
+                </p>
               </div>
             );
           })}

@@ -80,15 +80,13 @@ export default function Urban() {
         <div className="fixed inset-0 bg-black opacity-80 z-30"></div>
         <div className="fixed flex items-center justify-center h-screen w-screen z-40 flex-col">
           {overlayImage ? (
-            <Image
-              src={overlayImage}
-              alt=""
-              className="max-w-[80%] max-h-[80%] object-contain"
-            ></Image>
+            <div className="h-[80%] w-[80%] overflow-auto flex justify-center items-start">
+              <Image src={overlayImage} alt="" className="object-contain" />
+            </div>
           ) : (
             ""
           )}
-          <p className="absolute font-redhat text-xl font-light text-white bottom-8">
+          <p className="absolute font-redhat text-xl font-light text-white bottom-8 mx-20">
             {overlayText}
           </p>
         </div>
@@ -108,7 +106,7 @@ export default function Urban() {
 
       <div className="mt-32" id="top">
         <p className="font-poppins uppercase text-5xl font-medium mx-6">
-          Understanding and Defining the Problem
+          Understanding UrbanGate's Investors
         </p>
         <div className="mx-80">
           <p className="font-redhat text-xl font-light mt-6">
