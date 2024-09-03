@@ -25,10 +25,12 @@ export default function IntroStudy({
       <div className="p-6">
         <div className="grid grid-cols-3">
           <div className="col-span-3">
-            <p className="font-poppins uppercase text-6xl font-medium">
+            <p className="font-poppins uppercase md:text-6xl text-4xl font-medium">
               {title}
             </p>
-            <p className="font-redhat text-xl font-light mt-4">{description}</p>
+            <p className="font-redhat md:text-xl text-lg font-light mt-4">
+              {description}
+            </p>
             <div className="flex gap-2 mt-4">
               {tags.map((tag, index) => {
                 return (
@@ -52,9 +54,9 @@ export default function IntroStudy({
           </div>
         </div>
       </div>
-      <div className="grid grid-cols-3 px-6 gap-6">
-        <div className="relative">
-          <div className="absolute top-8 overflow-hidden">
+      <div className="md:grid md:grid-cols-3 px-6 md:gap-6 gap-4 flex flex-col">
+        <div className="md:relative">
+          <div className="md:absolute top-8 overflow-hidden">
             <Image
               src={image1}
               alt=""
@@ -63,12 +65,12 @@ export default function IntroStudy({
           </div>
         </div>
 
-        <div className="overflow-hidden">
+        <div className="md:overflow-hidden">
           <Image src={image2} alt="" className="transition-all duration-300" />
         </div>
 
-        <div className="relative">
-          <div className="absolute top-[-5rem] overflow-hidden">
+        <div className="md:relative">
+          <div className="md:absolute top-[-5rem] overflow-hidden">
             <Image
               src={image3}
               alt=""

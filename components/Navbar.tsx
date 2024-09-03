@@ -3,7 +3,7 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <div className="font-poppins flex items-center p-6 sticky top-0 z-10 bg-white">
+    <div className="font-poppins flex items-center md:p-6 p-4 sticky top-0 z-10 bg-white">
       <div className="flex gap-2 text-lg">
         <a
           className="hover:text-gray-500 transition duration-300"
@@ -21,11 +21,11 @@ export default function Navbar() {
         </a>
       </div>
       <div className="absolute left-1/2 transform -translate-x-1/2">
-        <p className="font-semibold text-5xl uppercase hover:text-gray-600 transition duration-300">
+        <p className="font-semibold md:text-5xl text-xl uppercase hover:text-gray-600 transition duration-300">
           Yifei Fang
         </p>
       </div>
-      <div className="flex gap-4 ml-auto font-light uppercase text-lg">
+      <div className="flex gap-4 ml-auto font-light uppercase text-lg md:visible invisible">
         <p className="hover:text-gray-500 transition duration-300">
           <a href="#about">About</a>
         </p>

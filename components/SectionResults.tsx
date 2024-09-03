@@ -12,11 +12,11 @@ export default function SectionResults({ images }: Props) {
   });
 
   return (
-    <div className="mt-60 px-6 mb-20" id="results">
-      <p className="font-poppins uppercase text-6xl font-medium text-center mb-6">
+    <div className="md:mt-60 mt-16 px-6 mb-20" id="results">
+      <p className="font-poppins uppercase md:text-6xl text-3xl font-medium text-center mb-6">
         Results
       </p>
-      <div className="flex gap-6">
+      <div className="flex flex-col md:flex-row gap-6">
         {columns.map((column, colIndex) => (
           <div key={colIndex} className="flex flex-col gap-6">
             {column.map((image, index) => (

@@ -33,7 +33,8 @@ export default function Gallery({
 
   return (
     <div className="mt-10 px-6 mb-10">
-      <div className="flex gap-6">
+      {/* Use responsive classes to change layout on smaller screens */}
+      <div className="flex flex-col md:flex-row gap-6">
         {columns.map((column, colIndex) => (
           <div key={colIndex} className="flex flex-col gap-6">
             {column.map((pair, index) => (

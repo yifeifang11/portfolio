@@ -8,10 +8,10 @@ interface Props {
 
 export default function NavbarStudy({ navs, navLinks }: Props) {
   return (
-    <div className="flex justify-between p-6 sticky top-2 z-10 bg-white">
+    <div className="flex justify-between md:p-6 p-4 sticky top-2 z-10 bg-white">
       <Link
         href="/"
-        className="font-light uppercase text-lg hover:text-gray-500 transition duration-300"
+        className="font-light uppercase md:text-lg hover:text-gray-500 transition duration-300"
       >
         Back to Home
       </Link>
@@ -20,7 +20,7 @@ export default function NavbarStudy({ navs, navLinks }: Props) {
           return (
             <p
               key={index}
-              className="font-light uppercase text-lg hover:text-gray-500 transition duration-300"
+              className="font-light uppercase md:text-lg hover:text-gray-500 transition duration-300"
             >
               <a href={navLinks[index]}>{nav}</a>
             </p>

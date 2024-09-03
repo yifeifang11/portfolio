@@ -12,7 +12,6 @@ import Concert from "@/public/concert.png";
 const ttImages: StaticImageData[] = [TT1, TT2, TT3];
 
 const getRandomImage = (exclude: StaticImageData | null): StaticImageData => {
-  // Filter out the previously shown image
   const filteredImages = ttImages.filter((image) => image !== exclude);
   const randomIndex = Math.floor(Math.random() * filteredImages.length);
   return filteredImages[randomIndex];
@@ -28,7 +27,7 @@ export default function Intro() {
 
   const handleMouseEnterTT = () => {
     const newImage = getRandomImage(previousImage);
-    setPreviousImage(newImage); // Update the previous image to the new one
+    setPreviousImage(newImage);
     setHoveredImage(newImage);
   };
 
@@ -37,12 +36,15 @@ export default function Intro() {
   };
 
   return (
-    <div className="grid grid-cols-3 mt-28 gap-6 px-6" id="about">
-      <div className="col-span-2 ml-24 flex flex-col gap-4">
-        <p className="font-poppins uppercase text-6xl font-medium">
+    <div
+      className="md:grid md:grid-cols-3 md:mt-28 mt-16 gap-6 px-6"
+      id="about"
+    >
+      <div className="col-span-2 md:ml-24 flex flex-col gap-4">
+        <p className="font-poppins uppercase md:text-6xl text-3xl font-medium">
           An Introduction
         </p>
-        <p className="font-redhat text-xl font-light">
+        <p className="font-redhat md:text-xl text-lg font-light">
           I’m currently a student at Vanderbilt University majoring in Computer
           Science + Economics and minoring in Engineering Management. My
           previous experience in software engineering has led me to the world of
@@ -51,7 +53,7 @@ export default function Intro() {
           solutions. I enjoy the challenge of understanding users and helping
           them improve their lives with intentional design and problem-solving.
         </p>
-        <p className="font-redhat text-xl font-light">
+        <p className="font-redhat md:text-xl text-lg font-light">
           In my free time, I enjoy playing{" "}
           <span
             onMouseEnter={handleMouseEnterTT}
@@ -79,11 +81,11 @@ export default function Intro() {
           .
         </p>
       </div>
-      <div className="relative">
+      <div className="md:relative md:mt-0 mt-8">
         <Image
           src={hoveredImage || Pfp}
           alt=""
-          className="absolute top-[-60%]"
+          className="md:absolute md:top-[-60%]"
         />
       </div>
     </div>

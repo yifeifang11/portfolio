@@ -68,7 +68,7 @@ export default function Urban() {
       <div
         className={`${
           overlayVisible ? "visible" : "invisible"
-        } transition duration-500`}
+        } transition duration-500 md:visible hidden`}
       >
         <p
           className="fixed top-4 right-4 cursor-pointer text-3xl text-white z-50 font-extralight hover:scale-105 duration-300 hover:text-gray-200"
@@ -104,46 +104,46 @@ export default function Urban() {
         tagColor="yellow"
       />
 
-      <div className="mt-32" id="top">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+      <div className="md:mt-32 mt-16" id="top">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           Understanding UrbanGate's Investors
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6 text-lg">
+          <p className="font-redhat md:text-xl font-light mt-6">
             To understand the needs and pain points of UrbanGate’s CEO, Will,
             and their investors, I conducted formal interviews and engaged in
             casual conversations to discover some key insights:
           </p>
-          <div className="mt-4 grid grid-cols-2 gap-6">
+          <div className="mt-4 md:grid grid-cols-2 gap-6">
             <ul className="list-outside list-disc ml-6">
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 Will faces challenges in scaling and growing his business with
                 his current model. He spends a significant amount of time
                 contacting investors and handling paperwork and procedures.
               </li>
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 There is little traffic on UrbanGate’s website. Instead, most of
                 the investors that Will finds are through personal connections.
               </li>
             </ul>
             <ul className="list-outside list-disc ml-6">
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 Investors struggle to decide whether to invest or not. This
                 often leads them to play it safe and not invest.
               </li>
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 Besides the potential for profits, the most important factor in
                 deciding whether to invest for investors is trust.
               </li>
             </ul>
           </div>
-          <p className="font-redhat text-xl font-light mt-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             Will also revealed his long-term vision for UrbanGate. He is
             anticipating a Web3 future where transactions are made primarily
             with cryptocurrencies. Accommodating his vision and incorporating my
             findings, I defined the problem statement:
           </p>
-          <p className="font-redhat text-xl font-light mt-6 bg-yellow-500">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6 bg-yellow-500">
             UrbanGate Capital’s business model is currently not scalable because
             it relies too much on manpower. UrbanGate also lacks a strong
             digital presence, which does not garner trust from potential
@@ -153,12 +153,12 @@ export default function Urban() {
         </div>
       </div>
 
-      <div className="mt-32">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+      <div className="md:mt-32 mt-16">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           Scalability: Minimal Viable Product (MVP)
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             We first decided to address UrbanGate’s scalability issues.
             Analyzing competitors who have successfully scaled in the private
             lending industry for properties, I discovered that Lofty.ai had both
@@ -169,7 +169,7 @@ export default function Urban() {
             humans must complete.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-6 mx-6 my-10">
+        <div className="md:grid grid-cols-2 gap-6 mx-6 my-10 flex flex-col">
           <Image
             src={Lofty1}
             alt=""
@@ -195,7 +195,7 @@ export default function Urban() {
             className="cursor-pointer hover:scale-[1.01] transition duration-300"
           ></Image>
         </div>
-        <p className="font-redhat text-xl font-light mt-6 mx-80">
+        <p className="font-redhat md:text-xl text-lg font-light mt-6 md:mx-80 mx-6">
           Since we were building an MVP, I prioritized the most basic
           functionalities. Our primary goal was to make sure a loan could be
           funded completely, and I drew a flow diagram to understand the
@@ -205,11 +205,11 @@ export default function Urban() {
           comes to building a brand and trust, I also decided to prioritize that
           after we built the MVP.
         </p>
-        <div className="w-full h-full flex justify-center items-center my-10">
+        <div className="flex justify-center items-center my-10 md:mx-0 mx-6">
           <Image
             src={UrbanFlow1}
             alt=""
-            className="max-w-[30%] cursor-pointer hover:scale-[1.01] transition duration-300"
+            className="md:max-w-[30%] cursor-pointer hover:scale-[1.01] transition duration-300"
             onClick={() => {
               setOverlayVisible(true);
               setOverlayImage(UrbanFlow1);
@@ -219,7 +219,7 @@ export default function Urban() {
             }}
           ></Image>
         </div>
-        <p className="font-redhat text-xl font-light mt-6 mx-80">
+        <p className="font-redhat md:text-xl text-lg font-light mt-6 md:mx-80 mx-6">
           I chose Next.js as the web framework because it supports necessary
           database functionality and can be deployed to the web quickly. To
           support cryptocurrency loans, we chose ConnectKit, which provides a
@@ -243,15 +243,15 @@ export default function Urban() {
       />
 
       <div className="mt-32">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           Inspiring Trust: Redesigning UrbanGate's Digital Presence
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             After building a functional MVP, we decided to redesign both
             UrbanGate’s client-facing website and the MVP website.
           </p>
-          <p className="font-redhat text-xl font-light mt-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             To gain a better understanding of what content should be on the
             client-facing website, I looked at local and larger competitors.
             Local competitors included neighboring private lending companies in
@@ -259,7 +259,7 @@ export default function Urban() {
             digital presence, as well as larger companies like DLP Capital.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-6 mx-6 my-10">
+        <div className="md:grid grid-cols-2 gap-6 mx-6 my-10 flex flex-col">
           <Image
             src={DLP}
             alt=""
@@ -285,28 +285,28 @@ export default function Urban() {
             className="cursor-pointer hover:scale-[1.01] transition duration-300"
           ></Image>
         </div>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             All the successful competitors shared many features, which I have
             included in the brand redesign:
           </p>
-          <ul className="list-outside list-disc ml-6 mt-6">
-            <li className="font-redhat text-xl font-light">
+          <ul className="list-outside list-disc text-lg ml-6 mt-6">
+            <li className="font-redhat md:text-xl font-light">
               Bold call to actions (buttons, actionable headings)
             </li>
-            <li className="font-redhat text-xl font-light">
+            <li className="font-redhat md:text-xl font-light">
               Methods of building trust (testimonials, mentions in the news)
             </li>
           </ul>
-          <ul className="list-outside list-disc ml-6">
-            <li className="font-redhat text-xl font-light">
+          <ul className="list-outside text-lg list-disc ml-6">
+            <li className="font-redhat md:text-xl font-light">
               Information describing the company’s methods and impact
             </li>
-            <li className="font-redhat text-xl font-light">
+            <li className="font-redhat md:text-xl font-light">
               Methods of registering with the company (forms, email lists)
             </li>
           </ul>
-          <p className="font-redhat text-xl font-light mt-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             They also had a distinct design that signals to investors and
             borrowers that they are professional and trustworthy. Will suggested
             that UrbanGate have a dark theme instead of a traditional light
@@ -314,7 +314,7 @@ export default function Urban() {
             presence.
           </p>
         </div>
-        <div className="mx-80 my-10">
+        <div className="md:mx-80 mx-6 my-10">
           <Image
             src={UrbanLanding}
             alt=""
@@ -330,19 +330,19 @@ export default function Urban() {
         </div>
       </div>
 
-      <div className="mt-32">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+      <div className="md:mt-32 mt-16">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           Streamlining the Investment Process
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             I redesigned the loan funding website to match the client-facing
             website. In addition, the investment process was not efficient and
             still involved a lot of back and forth. To improve the user
             experience of investing, I streamlined the investment process and
             added some useful features for both admin and investor.
           </p>
-          <p className="font-redhat text-xl font-light mt-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             Streamlining the investment process required a strong technical
             understanding of how DocuSign worked. Before, the investor had to
             wait for UrbanGate to sign the DocuSign, then approve the loan in
@@ -352,11 +352,11 @@ export default function Urban() {
             signature and approval.
           </p>
         </div>
-        <div className="w-full h-full flex justify-center items-center my-10">
+        <div className="flex justify-center items-center my-10 mx-6 md:mx-0">
           <Image
             src={UrbanFlow2}
             alt=""
-            className="max-w-[30%] cursor-pointer hover:scale-[1.01] transition duration-300"
+            className="md:max-w-[30%] cursor-pointer hover:scale-[1.01] transition duration-300"
             onClick={() => {
               setOverlayVisible(true);
               setOverlayImage(UrbanFlow2);
@@ -366,8 +366,8 @@ export default function Urban() {
             }}
           ></Image>
         </div>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             Sign in with Google was added so potential investors could first
             view the loans without setting up a wallet. The admin dashboard was
             redesigned to be more compact and easily navigable to manage an
@@ -379,12 +379,12 @@ export default function Urban() {
         </div>
       </div>
 
-      <div className="mt-32" id="tldr">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+      <div className="md:mt-32 mt-16" id="tldr">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           TL;DR
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             The two main challenges faced by UrbanGate Capital were the lack of
             scalability in their current model and a weak digital presence. To
             address scalability, we built an MVP that allows investors to fund

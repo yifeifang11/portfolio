@@ -1,5 +1,6 @@
+"use client";
 import NavbarStudy from "@/components/NavbarStudy";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Display1 from "@/public/friends-login-color.png";
 import Display2 from "@/public/friends-home-color.png";
@@ -20,8 +21,30 @@ import Final4 from "@/public/friends-final4.png";
 import Final5 from "@/public/friends-final5.png";
 
 export default function Home() {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const windowHeight = window.innerHeight;
+      const documentHeight = document.body.scrollHeight - windowHeight;
+      const scrollPercentage = (scrollTop / documentHeight) * 100;
+      setScrollProgress(scrollPercentage);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div>
+      <div
+        style={{ width: `100%` }}
+        className="fixed top-0 left-0 h-2 bg-white z-20"
+      />
+      <div
+        style={{ width: `${scrollProgress}%` }}
+        className="fixed top-0 left-0 h-2 bg-amber-500 z-30"
+      />
       <NavbarStudy
         navs={["Features", "Reflection", "Results"]}
         navLinks={["#features", "#reflection", "#results"]}

@@ -23,19 +23,6 @@ import Gallery from "@/components/Gallery";
 import NovaFinal1 from "@/public/novafinal1.png";
 import NovaFinal2 from "@/public/novafinal2.png";
 
-import UrbanFinal1 from "@/public/urbanfinal1.png";
-import UrbanFinal2 from "@/public/urbanfinal2.png";
-import UrbanFinal3 from "@/public/urbanfinal3.png";
-import UrbanFinal4 from "@/public/urbanfinal4.png";
-import UrbanFinal5 from "@/public/urbanfinal5.png";
-import UrbanFinal6 from "@/public/urbanfinal6.png";
-import UrbanFinal7 from "@/public/urbanfinal7.png";
-import UrbanFinal8 from "@/public/urbanfinal8.png";
-import UrbanFinal9 from "@/public/urbanfinal9.png";
-import UrbanFinal10 from "@/public/urbanfinal10.png";
-import UrbanFinal11 from "@/public/urbanfinal11.png";
-import UrbanFinal12 from "@/public/urbanfinal12.png";
-
 export default function Nova() {
   const [overlayVisible, setOverlayVisible] = useState<boolean>(false);
   const [overlayImage, setOverlayImage] = useState<null | StaticImageData>(
@@ -71,7 +58,7 @@ export default function Nova() {
       <div
         className={`${
           overlayVisible ? "visible" : "invisible"
-        } transition duration-500`}
+        } transition duration-500 md:visible hidden`}
       >
         <p
           className="fixed top-4 right-4 cursor-pointer text-3xl text-white z-50 font-extralight hover:scale-105 duration-300 hover:text-gray-200"
@@ -107,24 +94,24 @@ export default function Nova() {
         tagColor="green"
       />
 
-      <div className="mt-32" id="top">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+      <div className="md:mt-32 mt-16" id="top">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           Researcher Pain Points and User Types
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             To understand the role that data visualization plays in neuroimaging
             and genetics research and the current pain points that researchers
             in this field face, I conducted interviews with current PhD students
             in my lab. I gathered several important insights:
           </p>
           <div className="mt-4 ">
-            <ul className="list-outside list-disc ml-6">
-              <li className="font-redhat text-xl font-light">
+            <ul className="list-outside text-lg list-disc ml-6">
+              <li className="font-redhat md:text-xl font-light">
                 Data visualization is important because it helps reserachers
                 identify trends and make conclusions based on experimental data.
               </li>
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 Many researchers who do not code very often struggle to generate
                 graphs. The specific nature of neuroimaging and genetics
                 research means that these graphs are often more complex or
@@ -132,7 +119,7 @@ export default function Nova() {
               </li>
             </ul>
           </div>
-          <p className="font-redhat text-xl font-light mt-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             Also based on interviews and scouring through the current
             literature, I discovered that there is a lack of comprehensive data
             in the field. There is great promise for discovering a more concrete
@@ -141,42 +128,42 @@ export default function Nova() {
             twofold: individual researcher struggles with generating graphs and
             lack of data in the field as a whole.
           </p>
-          <p className="font-redhat text-xl font-light mt-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             I sought to understand what types of researchers would potentially
             use a data visualization tool. There are several types of users I
             designed for, which have driven design choices and implementations:
           </p>
           <div className="mt-4 ">
-            <ul className="list-outside list-disc ml-6">
-              <li className="font-redhat text-xl font-light">
+            <ul className="list-outside text-lg list-disc ml-6">
+              <li className="font-redhat md:text-xl font-light">
                 <span className="font-semibold">Non-technical users</span> who
                 are looking for an easy-to-use tool for visualizing data. This
                 is the most important user I designed for based on insights from
                 interviews.
               </li>
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 <span className="font-semibold">Discovery-driven users</span>{" "}
                 who are trying to discover new trends and exploring with a
                 variety of inputs. These users require plenty of customization.
               </li>
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 <span className="font-semibold">Hypothesis-testing users</span>{" "}
                 who are testing specific hypotheses with specific inputs. These
                 users also require plenty of customization and specificity in
                 inputs.
               </li>
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 <span className="font-semibold">Gene-focused users</span> who
                 are looking for the impact of specific genes or traits.
               </li>
-              <li className="font-redhat text-xl font-light">
+              <li className="font-redhat md:text-xl font-light">
                 <span className="font-semibold">Multi-omics users</span> who are
                 seeking to integrate various omics data to understand complex
                 biological interactions.
               </li>
             </ul>
           </div>
-          <p className="font-redhat text-xl font-light mt-6 bg-lime-500">
+          <p className="font-redhat text-lg md:text-xl font-light mt-6 bg-lime-500">
             Researchers in genetics and neuroimaging tend to struggle with
             efficient and insightful data visualization because of their
             specialization in the field and lack of coding experience. There is
@@ -188,11 +175,11 @@ export default function Nova() {
       </div>
 
       <div className="mt-32">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           Inspiration and Competitive Analysis
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             We decided that we wanted to develop an online tool that researchers
             could use to visualize and analyze their data. However, we were
             unclear about what types of graphs and visuals we should allow. I
@@ -201,7 +188,7 @@ export default function Nova() {
             and heatmaps.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-6 mx-6 my-10">
+        <div className="md:grid grid-cols-2 gap-6 mx-6 my-10 flex flex-col">
           <Image
             src={ManhattanExample}
             alt=""
@@ -227,7 +214,7 @@ export default function Nova() {
             className="cursor-pointer hover:scale-[1.01] transition duration-300"
           ></Image>
         </div>
-        <p className="font-redhat text-xl font-light mt-6 mx-80">
+        <p className="font-redhat md:text-xl text-lg font-light mt-6 md:mx-80 mx-6">
           I also looked into existing online tools that accomplished similar
           analyses. To see how useful they were in aiding researchers make
           discoveries, I developed a set of heuristics to determine the
@@ -237,7 +224,7 @@ export default function Nova() {
           most important to researchers in terms of analyzing data. Only webTWAS
           provided a simple manhattan plot that lacked much interactivity.
         </p>
-        <div className="grid grid-cols-3 gap-6 mx-6 my-10 items-center">
+        <div className="md:grid grid-cols-3 gap-6 mx-6 my-10 items-center flex flex-col">
           <Image
             src={Heuristics}
             alt=""
@@ -264,7 +251,7 @@ export default function Nova() {
           ></Image>
         </div>
 
-        <p className="font-redhat text-xl font-light mt-6 mx-80">
+        <p className="font-redhat md:text-xl text-lg font-light mt-6 md:mx-80 mx-6">
           Initial sketches of the website are shown below. I attempt to create a
           simple design that incorporates all the graphs and inputs that a
           researcher may need.
@@ -283,18 +270,18 @@ export default function Nova() {
       />
 
       <div className="mt-32">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           Prototyping and Iterating
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             The first goal was to build a manhattan plot. I decided to use
             Next.js as the web framework, and I used D3.js as the data
             visualization library. I chose D3.js because while it is one of the
             most customizable JavaScript libraries, which is necessary for more
             complex graphs like manhattan plots.
           </p>
-          <p className="font-redhat text-xl font-light mt-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             Below is the first iteration of the tool. There is a manhattan plot
             with customizable inputs and advanced filters that can be updated
             quickly. In addition, there is a table that contains the list of all
@@ -302,7 +289,7 @@ export default function Nova() {
             specific genes to learn more about them.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-6 mx-6 my-10">
+        <div className="md:grid grid-cols-2 gap-6 mx-6 my-10 flex flex-col">
           <Image
             src={ManhattanPlot}
             alt=""
@@ -328,14 +315,14 @@ export default function Nova() {
             className="cursor-pointer hover:scale-[1.01] transition duration-300"
           ></Image>
         </div>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             After, I implemented a second manhattan plot to accommodate a second
             dataset. This also allowed me to implement a heatmap for comparison
             across datasets for multi-omics users.
           </p>
         </div>
-        <div className="mx-80 my-10">
+        <div className="md:mx-80 my-10 mx-6">
           <Image
             src={Heatmap}
             alt=""
@@ -349,15 +336,15 @@ export default function Nova() {
             className="cursor-pointer hover:scale-[1.01] transition duration-300"
           ></Image>
         </div>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             To accommodate researchers who are simply looking for simple visuals
             and comparisons, I also implemented a compact view that displays
             only the manhattan plots. This helps researchers make quick visual
             comparisons across two datasets.
           </p>
         </div>
-        <div className="mx-80 my-10">
+        <div className="md:mx-80 mx-6 my-10">
           <Image
             src={Compact}
             alt=""
@@ -373,12 +360,12 @@ export default function Nova() {
         </div>
       </div>
 
-      <div className="mt-32" id="tldr">
-        <p className="font-poppins uppercase text-5xl font-medium mx-6">
+      <div className="md:mt-32 mt-16" id="tldr">
+        <p className="font-poppins uppercase md:text-5xl text-3xl font-medium mx-6">
           TL;DR
         </p>
-        <div className="mx-80">
-          <p className="font-redhat text-xl font-light mt-6">
+        <div className="md:mx-80 mx-6">
+          <p className="font-redhat md:text-xl text-lg font-light mt-6">
             Researchers in the genetics and neuroimaging field tend to struggle
             with generating meaningful visuals to help them make discoveries and
             identify trends. To address this issue and fill the gaps in the
@@ -401,7 +388,7 @@ export default function Nova() {
           setOverlayVisible={setOverlayVisible}
         />
       </div>
-      <p className="font-light uppercase text-2xl text-center mt-8 mb-10 hover:text-gray-500 transition duration-300">
+      <p className="font-light uppercase md:text-2xl text-lg text-center mt-8 mb-10 hover:text-gray-500 transition duration-300">
         <a href="#intro">Back to Top</a>
       </p>
     </div>

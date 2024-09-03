@@ -14,8 +14,8 @@ export default function Home() {
       <div>
         <Navbar />
 
-        <div className="grid grid-cols-3 px-6 gap-6 items-start">
-          <div className="flex gap-6 flex-col">
+        <div className="md:grid md:grid-cols-3 px-6 items-start flex flex-col md:gap-6 gap-4">
+          <div className="flex md:gap-6 gap-4 flex-col">
             <Display
               thumbnail={UrbanThumbnail}
               backgroundColor="yellow"
@@ -52,7 +52,7 @@ export default function Home() {
         <Resume />
 
         <p
-          className="font-poppins uppercase text-6xl mx-6 mt-40 mb-6 font-medium"
+          className="font-poppins uppercase md:text-6xl text-2xl mt-20 mx-6 md:mt-40 mt-10 mb-6 font-medium"
           id="contact"
         >
           Contact Me -{" "}

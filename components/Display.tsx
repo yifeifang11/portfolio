@@ -31,14 +31,14 @@ export default function Display({
           alt=""
           className="group-hover:scale-105 transition-all duration-300"
         />
-        <p className="absolute bottom-2 right-2 text-white uppercase font-poppins text-4xl font-semibold text-right group-hover:opacity-100 opacity-0 transition-all duration-300 z-10">
+        <p className="absolute bottom-2 right-2 text-white uppercase font-poppins md:text-4xl text-3xl font-semibold text-right group-hover:opacity-100 opacity-0 transition-all duration-300 z-10">
           {name}
         </p>
         <div className="absolute top-2 left-2 flex gap-2 group-hover:opacity-100 opacity-0 transition-all duration-300 z-10">
           {tags.map((tag, index) => {
             return (
               <p
-                className="text-white uppercase font-poppins font-light border border-white rounded-full px-2 py-1"
+                className="text-white uppercase font-poppins font-light border border-white rounded-full px-2 py-1 md:text-base text-sm"
                 key={index}
               >
                 {tag}
