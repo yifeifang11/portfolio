@@ -25,7 +25,7 @@ export default function Navbar() {
           Yifei Fang
         </p>
       </div>
-      <div className="flex gap-4 ml-auto font-light uppercase text-lg md:visible invisible">
+      <div className="hidden gap-4 ml-auto font-light uppercase text-lg md:flex">
         <p className="hover:text-gray-500 transition duration-300">
           <a href="#about">About</a>
         </p>

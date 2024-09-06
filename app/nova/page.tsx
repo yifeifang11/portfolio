@@ -58,7 +58,7 @@ export default function Nova() {
       <div
         className={`${
           overlayVisible ? "visible" : "invisible"
-        } transition duration-500 md:visible hidden`}
+        } transition duration-500 md:block hidden`}
       >
         <p
           className="fixed top-4 right-4 cursor-pointer text-3xl text-white z-50 font-extralight hover:scale-105 duration-300 hover:text-gray-200"

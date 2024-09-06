@@ -31,7 +31,7 @@ export default function Resume() {
                 : Temp
             }
             alt=""
-            className="md:visible hidden"
+            className="md:block hidden"
           />
           <p className="px-4 py-3 uppercase text-white bg-black text-center font-poppins font-light text-2xl md:mt-4 hover:bg-gray-700 transition duration-300 cursor-pointer">
             <a href="/Resume.pdf" download={true}>
